@@ -11,11 +11,12 @@ class EnclosedBox extends StatelessWidget {
   // final String model;
 
   EnclosedBox(this.results, this.previewH, this.previewW, this.screenH, this.screenW);
-
+// for the live feed
   List<Widget> _renderStrings() {
       double offset = -10;
       return results.map((re) {
-        offset = offset + 14;
+        offset = offset + 30; // space between the 2 options
+        print ( results );
         return Positioned(
           left: 10,
           top: offset,
@@ -25,9 +26,9 @@ class EnclosedBox extends StatelessWidget {
             "${re["label"].toString().substring(2)} ${(re["confidence"] * 100).toStringAsFixed(0)}%",
             style: TextStyle(
               // color: Color.fromRGBO(37, 213, 253, 1.0),
-              color: Colors.red,
-              fontSize: 54.0,
-              fontWeight: FontWeight.bold,
+              color: Colors.black, // collor letter
+              fontSize: 20.0, // how big are the letters
+              fontWeight: FontWeight.normal, // normal front size
             ),
           ),
         );

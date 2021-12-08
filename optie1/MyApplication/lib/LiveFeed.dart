@@ -33,8 +33,8 @@ class _CameraLiveScreenState extends State<CameraLiveScreen> {
       print('No camera is found');
     } else {
       controller = new CameraController(
-        widget.cameras[1],
-        ResolutionPreset.medium,
+        widget.cameras[1], // 0 back 1 front
+        ResolutionPreset.low,
       );
       controller.initialize().then((_) {
         if (!mounted) {
@@ -54,12 +54,12 @@ class _CameraLiveScreenState extends State<CameraLiveScreen> {
                 }).toList(),
                 imageHeight: img.height,
                 imageWidth: img.width,
-                numResults: 2,
+                numResults: 1, // aantal weergave in live feed ( dus beide of alleen de hoogste)
               ).then((recognitions) {
                 int endTime = new DateTime.now().millisecondsSinceEpoch;
                 print("Detection took ${endTime - startTime}");
 
-                widget.setRecognitions(recognitions, img.height, img.width);
+                widget.setRecognitions(recognitions, img.height , img.width);
 
                 isDetecting = false;
               });
@@ -89,7 +89,7 @@ class _CameraLiveScreenState extends State<CameraLiveScreen> {
     var previewH = math.max(tmp.height, tmp.width);
     var previewW = math.min(tmp.height, tmp.width);
     var screenRatio = screenH / screenW;
-    var previewRatio = previewH / previewW;
+    var previewRatio = previewH +100 / previewW;
 
     return OverflowBox(
       maxHeight:

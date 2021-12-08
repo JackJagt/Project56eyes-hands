@@ -165,7 +165,7 @@ class _FlutterTeachableState extends State<FlutterTeachable> {
                 ),
                 EnclosedBox(
                     _recognitions == null ? [] : _recognitions,
-                    math.max(_imageHeight, _imageWidth),
+                    math.max(_imageHeight  ,_imageWidth),
                     math.min(_imageHeight, _imageWidth),
                     size.height,
                     size.width,

@@ -9,7 +9,7 @@ class FaceDetectorView extends StatefulWidget {
   @override
   _FaceDetectorViewState createState() => _FaceDetectorViewState();
 }
-
+// 
 class _FaceDetectorViewState extends State<FaceDetectorView> {
   // No extra features are turned on
   FaceDetector faceDetector = GoogleMlKit.vision.faceDetector();

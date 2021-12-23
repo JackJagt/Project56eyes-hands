@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c753637-8b08-405a-a66f-3db4822f516e" name="Default Changelist" comment="" />
+    <list default="true" id="5c753637-8b08-405a-a66f-3db4822f516e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../buddybot/BuddyBotCam/lib/VisionDetectorViews/face_detector_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../buddybot/BuddyBotCam/lib/VisionDetectorViews/face_detector_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/jeroentuithof/.android/avd/Pixel_5_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -59,5 +62,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'ML/ML.dart';
 import 'package:camera/camera.dart';
 import 'VisionDetectorViews/detector_views.dart';
 import 'package:flutter/material.dart';
@@ -67,6 +67,11 @@ class Home extends StatelessWidget {
                         CustomCard(
                           'Buddy Bot',
                           FaceDetectorView(),
+                          featureCompleted: true,
+                        ),
+                        CustomCard(
+                          'ML',
+                          ML(),
                           featureCompleted: true,
                         ),
                       ],
